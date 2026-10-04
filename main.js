@@ -4,13 +4,17 @@ if (menu && links) {
   menu.hidden = false;
   const closeMenu = (restoreFocus = false) => {
     menu.setAttribute('aria-expanded', 'false');
-    menu.querySelector('span').textContent = '+';
+    const span = menu.querySelector('span');
+    if (span) span.textContent = '+';
+    links.classList.remove('nav-links-open');
     if (restoreFocus) menu.focus();
   };
   menu.addEventListener('click', () => {
     const isOpen = menu.getAttribute('aria-expanded') !== 'true';
     menu.setAttribute('aria-expanded', String(isOpen));
-    menu.querySelector('span').textContent = isOpen ? '−' : '+';
+    const span = menu.querySelector('span');
+    if (span) span.textContent = isOpen ? '−' : '+';
+    links.classList.toggle('nav-links-open', isOpen);
   });
   links.addEventListener('click', event => {
     if (event.target.closest('a')) closeMenu();
