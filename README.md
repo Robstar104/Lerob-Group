@@ -12,6 +12,10 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 Dann http://127.0.0.1:4173 öffnen. Alle auszuliefernden Dateien liegen in `dist/`.
 
+## VS Code Live Server
+
+`dist/index.html` mit „Open with Live Server“ öffnen. CSS, Schrift, Bild, JavaScript und interne Seitenlinks sind relativ verknüpft. Dadurch funktioniert die Website auch dann, wenn VS Code den übergeordneten Projekt- oder Workspace-Ordner als Serverwurzel verwendet. Nach dieser Korrektur eine bereits geöffnete Seite einmal neu laden.
+
 ## Seiten
 
 - `/`: Startseite mit Projekten, gemeinsamem Anspruch, Über uns und Kontakt
