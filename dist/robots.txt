@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lerob-group.rocky-eagle-0466.chatgpt.site/sitemap.xml
