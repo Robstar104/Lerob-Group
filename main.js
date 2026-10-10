@@ -27,3 +27,14 @@ if (menu && links) {
   });
   matchMedia('(min-width: 480px)').addEventListener('change', () => closeMenu());
 }
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.getAttribute('data-lang');
+    if (lang) {
+      try {
+        localStorage.setItem('lerob_lang', lang);
+      } catch (e) {}
+    }
+  });
+});

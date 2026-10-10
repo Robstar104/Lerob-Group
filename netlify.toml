@@ -14,3 +14,24 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[redirects]]
+  from = "/en/imprint"
+  to = "/en/impressum/"
+  status = 301
+
+[[redirects]]
+  from = "/en/imprint/"
+  to = "/en/impressum/"
+  status = 301
+
+[[redirects]]
+  from = "/en/privacy"
+  to = "/en/datenschutz/"
+  status = 301
+
+[[redirects]]
+  from = "/en/privacy/"
+  to = "/en/datenschutz/"
+  status = 301
+

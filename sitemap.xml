@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://lerob-group.lirob.chatgpt.site/</loc></url><url><loc>https://lerob-group.lirob.chatgpt.site/impressum/</loc></url><url><loc>https://lerob-group.lirob.chatgpt.site/datenschutz/</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/"/>
+  </url>
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/"/>
+  </url>
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/impressum/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/impressum/"/>
+  </url>
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/en/impressum/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/impressum/"/>
+  </url>
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/datenschutz/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/datenschutz/"/>
+  </url>
+  <url>
+    <loc>https://lerob-group.lirob.chatgpt.site/en/datenschutz/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/datenschutz/"/>
+  </url>
+</urlset>

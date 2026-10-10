@@ -1,6 +1,6 @@
 # Lerob Group
 
-Statische, deutschsprachige Website für Lerob Group. Kein Build und keine Laufzeit-Abhängigkeiten erforderlich.
+Statische, zweisprachige Website (Deutsch und Englisch) für Lerob Group. Kein Build und keine Laufzeit-Abhängigkeiten erforderlich.
 
 ## Lokal ansehen
 
@@ -34,16 +34,26 @@ Die Website ist für Netlify vorkonfiguriert (`netlify.toml`):
 
 ## Seiten
 
-- `/`: Startseite mit Projekten, gemeinsamem Anspruch, Über uns und Kontakt
-- `/impressum/`: bestätigte Betreiber, vollständige Anschrift und Kontakt
-- `/datenschutz/`: Hinweise entsprechend der implementierten Funktionen
-- `/404.html`: Fehlerseite
+- `/`: Startseite (Deutsch) mit Projekten, gemeinsamem Anspruch, Über uns und Kontakt
+- `/en/`: Vollständige englische Startseite
+- `/impressum/`: Bestätigte Betreiber, vollständige Anschrift und Kontakt (Deutsch)
+- `/en/impressum/`: Legal Notice (Englisch)
+- `/datenschutz/`: Datenschutzerklärung (Deutsch)
+- `/en/datenschutz/`: Privacy Policy (Englisch)
+- `/404.html`: Zweisprachige Fehlerseite mit Sprachauswahl
 
 `DESIGN.md` dokumentiert das Gestaltungsraster, die Referenzen und Designentscheidungen. `qa/` enthält lokale Prüfergebnisse; dieser Ordner wird nicht veröffentlicht.
 
+## Sprachauswahl und Spracherkennung
+
+- **Sprachwechsler im Footer:** Zwei klar gestaltete Knöpfe („Deutsch“ und „English“) im Footer aller Seiten erlauben den direkten Wechsel. Die Auswahl wird im `localStorage` gespeichert.
+- **Automatische Spracherkennung:** Beim ersten Aufruf der Startseite wird automatisch die bevorzugte Browser-Sprache (`navigator.languages`) erkannt. Bei nicht-deutschen Browsern leitet die Seite automatisch auf `/en/` weiter, bei deutschsprachigen Browsern bleibt sie auf `/`.
+- **URL-Steuerung:** Mit `?lang=de` bzw. `?lang=en` kann die Sprache auch direkt per Link vorgegeben werden.
+- **Barrierefreiheit & No-JS:** Ohne JavaScript funktionieren die Sprachknöpfe als reguläre HTML-Links weiter.
+
 ## Inhalte bearbeiten
 
-Texte und Links in `index.html`, Rechtstexte in ihren jeweiligen Unterordnern (`impressum/index.html`, `datenschutz/index.html`). Farben, Typografie und Breakpoints in `styles.css`. `main.js` steuert ausschließlich das mobile Menü. Ohne JavaScript stehen alle Inhalte und Navigationslinks weiterhin zur Verfügung. Darkmode folgt der Systemeinstellung. Es werden weder Tracking noch eigene Cookies, Formulare oder Browser-Speicher eingesetzt.
+Texte und Links in `index.html` und `en/index.html`, Rechtstexte in ihren jeweiligen Unterordnern (`impressum/index.html`, `en/impressum/index.html`, `datenschutz/index.html`, `en/datenschutz/index.html`). Farben, Typografie und Breakpoints in `styles.css`. `main.js` steuert das mobile Menü und speichert den Sprachwechsel. Ohne JavaScript stehen alle Inhalte und Navigationslinks weiterhin zur Verfügung. Darkmode folgt der Systemeinstellung. Es werden weder Tracking noch Werbung oder Drittanbieter-Cookies eingesetzt.
 
 ## Quellen
 

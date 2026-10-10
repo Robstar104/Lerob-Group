@@ -7,6 +7,8 @@
   <meta name="description" content="Datenschutz der Lerob Group. Informationen von Leon Damasty und Robert Pichlik.">
   <meta name="theme-color" content="#f7f7f2">
   <link rel="canonical" href="https://lerob-group.lirob.chatgpt.site/datenschutz/">
+  <link rel="alternate" hreflang="de" href="https://lerob-group.lirob.chatgpt.site/datenschutz/">
+  <link rel="alternate" hreflang="en" href="https://lerob-group.lirob.chatgpt.site/en/datenschutz/">
   <meta property="og:title" content="Datenschutz · Lerob Group">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
@@ -15,6 +17,27 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js" defer></script>
+  <script>
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get('lang');
+        if (q === 'de' || q === 'en') {
+          localStorage.setItem('lerob_lang', q);
+        }
+        var s = localStorage.getItem('lerob_lang');
+        var lang = s;
+        if (!lang) {
+          var n = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+          lang = n.toLowerCase().startsWith('de') ? 'de' : 'en';
+        }
+        if (lang === 'en') {
+          window.location.replace('../en/datenschutz/' + window.location.search + window.location.hash);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -54,7 +77,7 @@
     </section>
     <section>
       <h2>Was diese Website verarbeitet</h2>
-      <p>Diese Website stellt unsere Projekte vor. Wir verwenden in der Website selbst keine Analyse- oder Werbedienste und setzen keine eigenen Cookies oder Browser-Speicher ein. Es gibt keine Formulare und keine eingebetteten Inhalte anderer Websites. Schriftarten und Bilder werden vom selben Server wie die Website geladen.</p>
+      <p>Diese Website stellt unsere Projekte vor. Wir verwenden keine Analyse- oder Werbedienste und setzen keine Cookies ein. Zur technischen Speicherung deiner bevorzugten Sprachauswahl (Deutsch oder Englisch) wird ein Eintrag im lokalen Browserspeicher (localStorage) abgelegt, damit die gewählte Sprache bei weiteren Seitenaufrufen erhalten bleibt. Es gibt keine Formulare und keine eingebetteten Inhalte anderer Websites. Schriftarten und Bilder werden vom selben Server wie die Website geladen.</p>
     </section>
     <section>
       <h2>Bereitstellung und Hosting</h2>
@@ -84,7 +107,12 @@
     <span>© 2026 Lerob Group</span>
     <a href="../">Startseite</a>
     <a href="../impressum/">Impressum</a>
-    <a href="../datenschutz/">Datenschutz</a>
+    <a href="./">Datenschutz</a>
+    <div class="lang-switch" role="group" aria-label="Sprachauswahl">
+      <a href="./" class="lang-btn is-active" data-lang="de" lang="de" hreflang="de" aria-current="page">Deutsch</a>
+      <span class="lang-sep" aria-hidden="true">/</span>
+      <a href="../en/datenschutz/" class="lang-btn" data-lang="en" lang="en" hreflang="en">English</a>
+    </div>
   </footer>
 </body>
 </html>
