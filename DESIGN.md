@@ -6,7 +6,7 @@ Unabhängige Dachmarke, ruhig und menschlich, Schweizer Typografieraster. Taste:
 ## Referenzen und Ableitung
 - https://www.studiofaculty.com/ : großzügige Projektflächen, zurückhaltende Navigation, Arbeit vor Selbstdarstellung. Keine Übernahme von Assets oder Layout.
 - https://byware.de/ : grüner Produktakzent, native Software, Datenschutz; echtes ByRoutine-Produktbild. ByRoutine ist in Entwicklung, kein Download versprechen.
-- https://startklar-lerob.netlify.app/ : direkte Sprache, lokale Nähe, Leon & Robert. Die vorhandenen Fotos sind Stockbilder; deshalb keine Übernahme als Teamfoto.
+- https://lerob-startklar.netlify.app/ : direkte Sprache, lokale Nähe, Leon & Robert. Die vorhandenen Fotos sind Stockbilder; deshalb keine Übernahme als Teamfoto.
 - Taste: Editorial Manifesto Hero, asymmetrische Projektpräsentation, Native CSS, keine generischen Karten, keine erfundenen Referenzen.
 
 ## System

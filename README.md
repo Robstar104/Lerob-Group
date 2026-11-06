@@ -57,7 +57,7 @@ Texte und Links in `index.html` und `en/index.html`, Rechtstexte in ihren jeweil
 
 ## Quellen
 
-- Inhalte und Produktstatus: https://byware.de/ und https://startklar-lerob.netlify.app/ (geprüft am 4. Oktober 2026).
+- Inhalte und Produktstatus: https://byware.de/ und https://lerob-startklar.netlify.app/ (geprüft am 4. Oktober 2026).
 - ByRoutine: originales Produktbild von https://byware.de/assets/img/byroutine-preview-today.png, als WebP optimiert.
 - Manrope: lokale OFL-Schrift. Lizenz in `assets/OFL-Manrope.txt`.
 - Betreiber, Straße/Hausnummer und E-Mail vom Nutzer im Chat bestätigt.
